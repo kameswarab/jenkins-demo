@@ -15,7 +15,7 @@ steps{
 
 
 	steps {
-                withMaven(maven : 'Maven 3') {
+                maven(maven : 'Maven 3') {
                     sh 'mvn install -e -Dmaven.test.skip=true'
                 }
             }

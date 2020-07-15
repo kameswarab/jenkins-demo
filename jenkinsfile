@@ -9,14 +9,14 @@ steps{
 }
     
     stage('Run tests') {
-        try {
+
              steps{
                     sh 'mvn clean test -Dmaven.test.failure.ignore=true'
 	     }
                
-        } finally {
-            echo 'tests run'
-        }
-    }
+
+
+
+ }   
 }
 }

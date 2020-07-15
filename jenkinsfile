@@ -2,7 +2,7 @@
 
 pipeline{    
 agent {
-           label "CICD-KAM"
+           label "CICD-${params.ENV}"
         }
 stages{
 stage('Checkout') {

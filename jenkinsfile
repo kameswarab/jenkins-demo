@@ -1,9 +1,6 @@
 #!groovy
 
-node('master') {
-tools {
-        maven 'Maven 3' 
-    }    
+node('master') {    
 stage('Checkout') {
         checkout scm
     }

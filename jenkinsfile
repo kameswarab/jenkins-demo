@@ -13,9 +13,13 @@ steps{
     
     stage('Run tests') {
 
-             steps{
-                    sh 'mvn clean test -Dmaven.test.failure.ignore=true'
-	     }
+
+	steps {
+                withMaven(maven : 'Maven 3') {
+                    sh 'mvn install -e -Dmaven.test.skip=true'
+                }
+            }
+
                
 
 

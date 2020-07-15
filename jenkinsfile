@@ -1,0 +1,20 @@
+#!groovy
+
+node('master') {
+    stage('Checkout') {
+        checkout scm
+    }
+    
+    stage('Run tests') {
+        try {
+            withMaven(maven: 'Maven 3') {
+                steps{
+                    sh 'mvn clean test -Dmaven.test.failure.ignore=true'
+		    }
+                
+            }
+        } finally {
+            echo 'tests run'
+        }
+    }
+}

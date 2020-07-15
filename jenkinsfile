@@ -1,6 +1,9 @@
 #!groovy
 
 pipeline{    
+agent {
+           label "CICD-KAM"
+        }
 stages{
 stage('Checkout') {
 steps{       

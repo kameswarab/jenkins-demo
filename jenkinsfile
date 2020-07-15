@@ -1,6 +1,7 @@
 #!groovy
 
-node('master') {    
+pipeline{    
+stages{
 stage('Checkout') {
         checkout scm
     }
@@ -15,4 +16,5 @@ stage('Checkout') {
             echo 'tests run'
         }
     }
+}
 }

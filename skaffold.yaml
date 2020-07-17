@@ -2,7 +2,7 @@ apiVersion: skaffold/v1beta2
 kind: Config
 build:
   artifacts:
-  - image: gcr.io/rise-project-demo/jenkins-demo
+  - image: rise-project-demo/jenkins-demo
     context: .
     docker: {}
   tagPolicy:

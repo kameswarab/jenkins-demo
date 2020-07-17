@@ -46,7 +46,7 @@ canary:
 service:
   name: jenkins-demo
   type: ClusterIP
-  externalPort: 8090
+  externalPort: 80
   internalPort: 8090
   annotations:
     fabric8.io/expose: "true"

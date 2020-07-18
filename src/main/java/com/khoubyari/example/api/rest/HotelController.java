@@ -97,4 +97,13 @@ public class HotelController extends AbstractRestHandler {
         checkResourceFound(this.hotelService.getHotel(id));
         this.hotelService.deleteHotel(id);
     }
+@RequestMapping(value = "/testapi",
+            method = RequestMethod.GET)
+    @ResponseStatus(HttpStatus.OK)
+    public
+    @ResponseBody
+    String testAPI( HttpServletRequest request, HttpServletResponse response) throws Exception {
+        return "This jenkinx-testing v1";
+    }
+
 }

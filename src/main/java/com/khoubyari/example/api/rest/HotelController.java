@@ -103,7 +103,7 @@ public class HotelController extends AbstractRestHandler {
     public
     @ResponseBody
     String testAPI( HttpServletRequest request, HttpServletResponse response) throws Exception {
-        return "This jenkinx-testing v3";
+        return "This jenkinx-testing v4";
     }
 
 }

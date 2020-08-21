@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: jenkins-demo
-        image: 973141472776.dkr.ecr.ap-south-1.amazonaws.com/jenkins-demo2:latest
+        image: 973141472776.dkr.ecr.ap-south-1.amazonaws.com/jenkins-demo3:latest
         ports:
         - containerPort: 9080

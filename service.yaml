@@ -1,16 +1,16 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: jenkins-demo
+  name: jenkins-demo-test
 spec:
   selector:
     matchLabels:
-      run: jenkins-demo
+      run: jenkins-demo-test
   replicas: 1
   template:
     metadata:
       labels:
-        run: jenkins-demo
+        run: jenkins-demo-test
     spec:
       containers:
       - name: jenkins-demo
